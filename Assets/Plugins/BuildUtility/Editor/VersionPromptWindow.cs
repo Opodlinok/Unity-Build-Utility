@@ -84,10 +84,17 @@ namespace Opodlinok.BuildUtility.Editor
                 ChangelogManager.CopyChangelogToBuildFolder(
                     _settings.ChangelogPathFormat, buildDir);
 
-            var cfg = new { releaseBuild = _releaseBuild };
+            var config = new
+            {
+                releaseBuild = _releaseBuild,
+                enableOverlay = _settings.EnableOverlay,
+                overlayPosition = _settings.OverlayPosition.ToString(),
+                showStudioLabel = _settings.ShowStudioLabel
+            };
+
             File.WriteAllText(
                 Path.Combine(buildDir, "BuildUtilityConfig.json"),
-                JsonUtility.ToJson(cfg));
+                JsonUtility.ToJson(config));
 
             _defaultHandler?.Invoke(_opts);
         }
