@@ -5,6 +5,12 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 
 ---
 
+## [0.3.0]
+### Added
+- VersionPromptWindow for build metadata input.
+
+---
+
 ## [0.2.0]
 ### Added
 - BuildPipelineHook to intercept Unity build commands.
