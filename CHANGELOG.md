@@ -5,6 +5,12 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 
 ---
 
+## [0.5.0]
+### Added
+- VersionOverlay MonoBehaviour for runtime HUD display.
+
+---
+
 ## [0.4.0]
 ### Added
 - ChangelogManager for managing markdown changelog.
