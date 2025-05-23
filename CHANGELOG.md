@@ -5,6 +5,12 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 
 ---
 
+## [0.4.0]
+### Added
+- ChangelogManager for managing markdown changelog.
+
+---
+
 ## [0.3.0]
 ### Added
 - VersionPromptWindow for build metadata input.
