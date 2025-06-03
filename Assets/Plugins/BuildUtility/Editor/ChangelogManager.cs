@@ -22,7 +22,8 @@ namespace Opodlinok.BuildUtility.Editor
             sb.AppendLine();
 
             var old = File.Exists(abs) ? File.ReadAllText(abs) : "";
-            File.WriteAllText(abs, sb + old);
+            sb.Append(old);
+            File.WriteAllText(abs, sb.ToString());
         }
 
         public static void CopyChangelogToBuildFolder(string format, string buildDir)
